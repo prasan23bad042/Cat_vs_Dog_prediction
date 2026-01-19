@@ -50,21 +50,21 @@ The project covers:
 ### 🔹 Training & Validation Accuracy
 This plot shows how the model accuracy improves over training epochs.
 
-![Training Accuracy](accuracy_plot.png)
+![Training Accuracy](https://github.com/prasan23bad042/Cat_vs_Dog_prediction/blob/main/output1-model.png?raw=true)
 
 ---
 
 ### 🔹 Training & Validation Loss
 This plot helps analyze convergence and overfitting behavior.
 
-![Training Loss](loss_plot.png)
+![Training Loss](https://github.com/prasan23bad042/Cat_vs_Dog_prediction/blob/main/output2-accuracy.png?raw=true)
 
 ---
 
 ### 🔹 Sample Prediction Output
 Prediction result for a custom uploaded image.
 
-![Prediction Output](prediction_output.png)
+![Prediction Output](https://github.com/prasan23bad042/Cat_vs_Dog_prediction/blob/main/output4-own%20image%20check.png?raw=true)
 
 ---
 
