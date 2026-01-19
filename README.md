@@ -1,42 +1,89 @@
-# 🐶🐱 Dog vs Cat Image Classifier
+# 🐶🐱 Dog vs Cat Image Classifier  
 
-Welcome to my first deep learning project! 🎉 This project uses **transfer learning** with the **VGG16** model to classify images of **dogs and cats**. It was built using **TensorFlow** and trained on a subset of the official Cats vs Dogs dataset from Microsoft.
+Welcome to my **first deep learning project** 🎉  
+This project uses **Transfer Learning with VGG16** to classify images of **dogs and cats** using **TensorFlow and Keras**.  
+The model is trained on a filtered version of the **Microsoft Cats vs Dogs dataset** and demonstrates the complete deep learning workflow.
 
 ---
 
-## 📁 Project Structure
+## 📌 Project Overview
 
-- **Dog vs Cat Prediction.py** – Main training script.
-- **best_model.h5** – Saved best model weights (generated after training).
-- Dataset – Automatically downloaded and unzipped inside the script.
+Image classification is a fundamental computer vision task.  
+In this project, a **pretrained VGG16 model** is used as a feature extractor, with custom layers added on top to perform **binary classification** (Dog vs Cat).
+
+The project covers:
+- Dataset loading and preprocessing  
+- Data augmentation  
+- Transfer learning  
+- Model training and evaluation  
+- Visualization of results  
+- Image prediction on custom inputs  
 
 ---
 
 ## 🚀 Features
 
-- ✅ Transfer Learning using VGG16
-- ✅ Data Augmentation for better generalization
-- ✅ Early stopping and model checkpointing
-- ✅ Training/validation accuracy and loss plots
-- ✅ Simple image prediction function
-- ✅ Colab-compatible image upload and testing
+- ✅ Transfer Learning using **VGG16 (ImageNet weights)**  
+- ✅ Data augmentation for improved generalization  
+- ✅ Early stopping to prevent overfitting  
+- ✅ Model checkpointing (`best_model.h5`)  
+- ✅ Training & validation accuracy/loss visualization  
+- ✅ Custom image prediction function  
+- ✅ Google Colab–compatible image upload support  
 
 ---
 
-## 🧠 Model Overview
+## 🧠 Model Architecture
 
-- **Base Model**: VGG16 (pretrained on ImageNet, frozen during training)
+- **Base Model**: VGG16 (frozen, pretrained on ImageNet)  
 - **Custom Layers**:
-  - Global Average Pooling
-  - Batch Normalization
-  - Dense (512 units) + Dropout
-  - Final Sigmoid Layer for Binary Classification
+  - Global Average Pooling  
+  - Batch Normalization  
+  - Dense layer (512 units, ReLU)  
+  - Dropout (0.5)  
+  - Sigmoid output layer (binary classification)  
 
 ---
 
-## 🏁 How to Run
+## 📊 Output & Visualizations
 
-### 1. Clone the Repository
+### 🔹 Training & Validation Accuracy
+This plot shows how the model accuracy improves over training epochs.
+
+![Training Accuracy](accuracy_plot.png)
+
+---
+
+### 🔹 Training & Validation Loss
+This plot helps analyze convergence and overfitting behavior.
+
+![Training Loss](loss_plot.png)
+
+---
+
+### 🔹 Sample Prediction Output
+Prediction result for a custom uploaded image.
+
+![Prediction Output](prediction_output.png)
+
+---
+
+## 📈 Model Performance
+
+- Uses **Binary Crossentropy** loss  
+- Optimized with **Adam optimizer**  
+- Evaluated using:
+  - Training accuracy  
+  - Validation accuracy  
+  - Loss curves  
+
+The model generalizes well due to transfer learning and data augmentation.
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/Cat_vs_Dog_prediction.git
+git clone https://github.com/prasan23bad042/Cat_vs_Dog_prediction.git
 cd Cat_vs_Dog_prediction
